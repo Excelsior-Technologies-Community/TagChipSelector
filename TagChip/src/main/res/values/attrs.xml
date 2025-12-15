@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TagChipView">
+
+        <!-- Behavior -->
+        <attr name="chipMultiSelect" format="boolean" />
+        <attr name="chipRemovable" format="boolean" />
+
+        <!-- Colors -->
+        <attr name="chipSelectedBgColor" format="color" />
+        <attr name="chipUnselectedBgColor" format="color" />
+        <attr name="chipSelectedTextColor" format="color" />
+        <attr name="chipUnselectedTextColor" format="color" />
+
+        <!-- Common background -->
+        <attr name="chipCornerRadius" format="dimension" />
+        <attr name="chipStrokeWidth" format="dimension" />
+        <attr name="chipStrokeColor" format="color" />
+
+        <!-- Selected background overrides -->
+        <attr name="chipSelectedCornerRadius" format="dimension" />
+        <attr name="chipSelectedStrokeWidth" format="dimension" />
+        <attr name="chipSelectedStrokeColor" format="color" />
+
+        <!-- Unselected background overrides -->
+        <attr name="chipUnselectedCornerRadius" format="dimension" />
+        <attr name="chipUnselectedStrokeWidth" format="dimension" />
+        <attr name="chipUnselectedStrokeColor" format="color" />
+
+    </declare-styleable>
+
+
+</resources>
