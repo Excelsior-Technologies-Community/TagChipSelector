@@ -99,5 +99,12 @@ class TagChipAdapter(
             setStroke(bg.strokeWidth, bg.strokeColor)
         }
     }
+
+    fun addTags(newTags: List<TagItem>) {
+        val start = tags.size
+        tags.addAll(newTags)
+        notifyItemRangeInserted(start, newTags.size)
+    }
+
 }
 

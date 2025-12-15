@@ -14,6 +14,7 @@ class TagChipView @JvmOverloads constructor(
     private var multiSelect = true
     private var removable = true
     private lateinit var chipStyle: ChipStyle
+    private var chipAdapter: TagChipAdapter? = null
 
     init {
         layoutManager = FlexboxLayoutManager(context)
@@ -121,13 +122,14 @@ class TagChipView @JvmOverloads constructor(
         list: List<TagItem>,
         onSelectionChanged: (List<TagItem>) -> Unit
     ) {
-        adapter = TagChipAdapter(
+        chipAdapter = TagChipAdapter(
             list.toMutableList(),
             multiSelect,
             removable,
             chipStyle,
             onSelectionChanged
         )
+        adapter = chipAdapter
     }
 
     fun updateStyle(newStyle: ChipStyle) {
@@ -138,5 +140,10 @@ class TagChipView @JvmOverloads constructor(
     private fun dpToPx(context: Context, dp: Float): Float {
         return dp * context.resources.displayMetrics.density
     }
+
+    fun addTags(newTags: List<TagItem>) {
+        chipAdapter?.addTags(newTags)
+    }
+
 
 }
