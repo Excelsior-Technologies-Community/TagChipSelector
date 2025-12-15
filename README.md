@@ -22,10 +22,36 @@
 
 ---
 
-## Preview
+## Preview And Demo
+
+<p align="center">
+  <img src="assets/image1.jpg" width="360" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/demo.gif" width="470" />
+</p>
 
 ---
 
+## Installation (JitPack)
+
+### 1️⃣ Add JitPack to your **root `settings.gradle` or `build.gradle`**
+
+```gradle
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+### Add Dependency
+```
+dependencies {
+	        implementation 'com.github.Excelsior-Technologies-Community:TagChipSelector:1.0.0'
+	}
+```
+---
 ## XML Attributes Reference
 
 ### Behavior Attributes
