@@ -25,10 +25,18 @@
 ## Preview And Demo
 
 <p align="center">
-  <img src="assets/image1.jpg" width="360" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/demo.gif" width="470" />
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/image1.jpg" width="360" />
+    </td>
+    <td align="center">
+      <img src="assets/demo.gif" width="360" />
+    </td>
+  </tr>
+</table>
 </p>
+
 
 ---
 
